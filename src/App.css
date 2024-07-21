@@ -1,38 +1,986 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.topcontainer {
+    background: #504A4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #7d7a7a;
+}
+.topcontainer  {
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+
+    background: #504A4A;
+}
+.topcontainer div img {
+    margin: auto;
+    width: 180px;
+    height: 75px;
+    background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.topbarcontainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #504A4A;
+}
+
+
+.topbarcontainer button {
+    padding: 18px;
+    color: #fff;
+    border: none;
+    margin: auto;
+    background: #504A4A;
+
+
+}
+
+.topbarcontainer button:hover {
+
+    border-bottom: 3px solid red;
+    transition: 1s;
+}
+
+.linktopbar {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+.contenteventseries {
+    display: flex;
+}
+
+.eventohomecontainer {
+    margin: auto;
+}
+
+.texteventshome {
+    font-family: sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position: relative;
+}
+
+.texteventshome::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.texteventshome::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.eventHome {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #504A4A;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.eventHome div {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.eventHome img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    transform-origin: left;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    margin-left: 0;
+    right: 0;
+    width: 600px;
+    height: 400px;
+}
+
+.eventHome h3 {
+    color: #504A4A;
+
+}
+
+.eventHome h2 {
+    font-size: 2rem;
+
+
+}
+
+.eventHome p {
+    font-size: 2rem;
+    padding: 20px;
+
+
+}
+
+.ImageHome {
+    display: grid;
+    grid-auto-flow: column;
+    overflow: auto;
+    height: 600px;
+    overscroll-behavior-inline: contain;
+}
+
+.ImageHome::-webkit-scrollbar {
+    width: 5px;
+}
+
+.ImageHome::-webkit-scrollbar-track {
+    background: #e0dddd;
+}
+
+.ImageHome::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+    background: #f00
+}
+
+.ImageHome .image {
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 150px;
+
+}
+
+.ImageHome .image img {
+
+    width: 300px;
+    height: 500px;
+
+
+}
+
+.ImageHome .image h2 {
+    text-align: center;
+    font-size: 0.9rem;
+
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.characters {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.characters div {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+    cursor: pointer;
+    flex-direction: column;
+    border-width: 3px 3px 5px 5px;
+    border-radius:10%;
+
+    margin: 25px;
+
+    background: url('https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-attachment: fixed;
+   
+    border: solid black;
+    border-color: black;
+    float: left;
+}
+
+.characters div img {
+    width: 90%;
+    height: 80%;
+   border-radius: 50%;
+
+    margin-left: 20px;
+    align-self: center;
+
+}
+
+.characters div h2 {
+
+    
+    margin: 15px;
+    padding: 0 5px;
+color: #fff;
+    background:rgba(0, 0, 0, 0.5);
+  
+
+    text-align: center;
+}
+
+.comics {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.comics div {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+    cursor: pointer;
+    flex-direction: column;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+
+    margin: 25px;
+
+    background: #504A4A;
+    border: solid black;
+    border-color: black;
+    float: left;
+}
+
+.comics div img {
+    width: 90%;
+    height: 80%;
+    margin-left: 10px;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+
+    margin-left: 20px;
+    align-self: center;
+
+}
+
+.comics div h2 {
+
+    transform: rotate(2deg);
+    margin: 15px;
+    padding: 0 5px;
+
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+
+    text-align: center;
+}
+
+/* .inputsubmit{
+    background: linear-gradient(180deg, #E23636, #000);
+    padding: 15px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 30px 30px -20px #000;
+} */
+
+.inputsubmit::placeholder {
+    color: #fff;
+}
+
+.inputsubmit{
+    margin-left: 40px;
+    padding: 20px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #E23636, #000);
+}
+input[type='text']{
+    background: linear-gradient(150deg, #E23636, white);
+    padding: 15px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 30px 30px -20px #000;
+}
+input[type='text']::placeholder {
+    color: #fff;
+}
+input[type='date'] {
+    background: linear-gradient(150deg, #E23636, white);
+    padding: 15px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 30px 30px -20px #000;
+}
+
+.indContainer {
+    display: flex;
+}
+
+
+.seriescont {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.textseriescontainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-ciudad-comic-gradient_23-2151165959.jpg');
+
+    width: 90%;
+    height: 90%;
+    background-attachment: fixed;
+
+    position: relative;
+
+}
+
+.textseries {
+
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    background-color: #fff;
+
+
+
+}
+
+.textseries::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+}
+
+.textseries::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 4px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+}
+
+.serieshome {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    margin: auto;
+    cursor: pointer;
+}
+
+.serieshome img {
+    width: 90%;
+    height: 90%;
+}
+
+.serieshome h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+.google {
+  --c: #fff;
+ 
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+    background-image: url('https://pm1.aminoapps.com/6135/599ef56cbfcbc40cb4b2402dcc062ec7a677e092_hq.jpg');
+    background-attachment: fixed;
+
+    color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.google:hover,
+.google:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+ 
+  ;
+}
+
+.google:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.google {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+  
+  .spanGoogle{
+   margin: 10px;
+  
+   }
+
+  
+  .loginContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   width: 100%;
+   height: 100%;
+    border-radius: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .loginContainer img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  to {
+  
+  .loginform {
+    height: 100%;
+    display: block;
+    text-align: center;
+  
+  }
+  
+  /* .logInRes{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 32px;
+    border: none;
+    background: transparent;
+  }
+ 
+  
+  .logInRes::after, .logInRes::before{
+    border: 3px solid #039be5;
+    content: "";
+  position: absolute;
+    width: calc(100% );
+    height: calc(100% );
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+  
+  .logInRes:hover::after{
+    transform: translate(-7px, -7px);
+  }
+  
+  .logInRes::before{
+    transform: translate(1px, 1px);
+  }
+   */
+  .question{
+    text-align: center;
+  }
+  .accountquestion {
+    font-size: 1.1rem;
+    color: gray;
+  }
+
+ 
+
+  .logInRes {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    
+    border-style: none;
+  
+    color: #fff;
+    cursor: pointer;
+    
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+   
+    position: relative;
+    text-align: center;
+
+  
+    width: auto;
+  
+    z-index: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .logInRes {
+      padding: 19px 32px;
+    }
+  }
+  
+  .logInRes:before,
+  .logInRes:after {
+    border-radius: 80px;
+  }
+  
+  .logInRes:before {
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .logInRes:after {
+    background-color: initial;
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .logInRes:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+  }
+  
+  .logInRes:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  .logInRes:active:not(:disabled) {
+    color: #ccc;
+  }
+  
+  .logInRes:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  }
+  
+  .logInRes:active:not(:disabled):after {
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+  
+  .logInRes:disabled {
+    cursor: default;
+    opacity: .24;
+  }
+  .register {
+    
+    padding: 20px;
+  
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+  
+    background: 	#518cca;
+    cursor: pointer;
+  color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+   overflow: hidden;
+  }
+  
+  .register span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+  
+  }
+  
+  .register::after {
+    content: '';
+    width: 100%;
+  
+  
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: calc(-100% - 80px);
+  
+    border-top: 70px solid #e23636;
+    border-left: 70px solid transparent;
+    transition: .3s ease-in-out;
+  }
+  
+  .register:hover::after {
+    right: 0;
+  
+  color: #fff;
+    transition: 1s;
+  
+    cursor: pointer;
+  }
+
+
+  .image img{
+    width: 100%;
+  }
+
+  .characterind{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .characterind img{
+    width: 400px;
+    height:400px;
+    border-radius: 50px;
+    border:3px solid #000;
+  }
+
+  .characterind img:hover{
     transform: rotate(360deg);
+    transition: 2s;
   }
+
+  .characterind div h2{
+    
+   
+   
+
+    transform: rotate(2deg);
+    margin: 15px;
+    padding: 25px;
+
+    background: #aa1818;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+
+    text-align: center;
+   font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+
+
+
+
+@media (max-width:700px) {
+    .topbarcontainer {
+
+       flex-direction: column;
+    }
+    .ImageHome {
+
+        height: 600px;
+        width: 600px;
+    }
+
+    .comics div img {
+        width: 90%;
+        height: 80%;
+        margin-left: 0px;
+
+
+        align-self: center;
+
+    }
+
+    .comics {
+        grid: none;
+
+        flex-direction: column;
+    }
+
+    .comics div {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+.characters{
+    grid: none;
+
+        flex-direction: column;
+}
+.characters div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+    .eventHome {
+        grid: none;
+        display: block;
+
+    }
+
+    .eventHome h3 {
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .eventHome h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 3rem;
+
+
+    }
+
+    .eventHome p {
+        text-align: center;
+        font-size: 2rem;
+
+
+
+    }
+
+    .eventHome div {
+
+        margin-left: 0px;
+    }
+
+    .eventohomecontainer {
+        margin-left: 0px;
+    }
+
+    .texteventshome::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    
+    .texteventshome::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    
+    .seriescont {
+        grid: none;
+        display: block;
+        flex-direction: column;
+    }
+
+    .textcomiccontainer {
+        width: 100%;
+    }
+
+  
+
+    .textseriescontainer {
+
+
+
+        background-image: url('https://img.freepik.com/vector-gratis/fondo-ciudad-comic-gradient_23-2151165959.jpg');
+
+        width: 100%;
+        height: 450px;
+        background-attachment: fixed;
+        
+        position: relative;
+
+    } 
+
+    
+    
+.textseries::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+}
+
+.textseries::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+}
+
+    
+    .ImageHome {
+        display: grid;
+        grid-auto-flow: column;
+        overflow: auto;
+        height: 600px;
+        width: 100%;
+        overscroll-behavior-inline: contain;
+    }
+    
+  
+    
+    .ImageHome .image {
+        cursor: pointer;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background-color: #ddd;
+        margin-right: 150px;
+    
+    }
+    
+    .ImageHome .image img {
+    
+        width: 300px;
+        height: 500px;
+    
+    
+    }
+    .eventHome img{
+      
+        width:100%;
+        height: 100%;
+    }
+    .serieshome img {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .topcontainer{
+        flex-direction: column;
+    }
+    .characterind img{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
 }
