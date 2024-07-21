@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Characters from './pages/Characters';
 import Events from './pages/Events';
 import './App.css'
-// import Stories from './pages/Stories';
+
 import Series from './pages/Series';
 import Individual from './components/Individual';
 import IndEvent from './components/individual/indevents';
@@ -16,6 +16,7 @@ import { getAuth,onAuthStateChanged } from 'firebase/auth';
 import appFirebase from './credentials';
 import { useState } from 'react';
 import TopBar from './components/TopBar';
+import Footer from './components/Footer';
 const auth=getAuth(appFirebase)
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
        <Route path='/serie/:id'element={<IndSeries/>}/>
        
       </Routes>
+      <Footer/>
    </BrowserRouter>
   );
 }
