@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/marvel/static/css/main.5945b35d.css",
-    "main.js": "/marvel/static/js/main.fd77c6f4.js",
+    "main.js": "/marvel/static/js/main.ad39a5d1.js",
     "static/js/453.a6db5180.chunk.js": "/marvel/static/js/453.a6db5180.chunk.js",
     "static/media/marvel-logo-tumblr-24.png": "/marvel/static/media/marvel-logo-tumblr-24.6cf7be69c472ce0ec729.png",
     "index.html": "/marvel/index.html",
     "main.5945b35d.css.map": "/marvel/static/css/main.5945b35d.css.map",
-    "main.fd77c6f4.js.map": "/marvel/static/js/main.fd77c6f4.js.map",
+    "main.ad39a5d1.js.map": "/marvel/static/js/main.ad39a5d1.js.map",
     "453.a6db5180.chunk.js.map": "/marvel/static/js/453.a6db5180.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5945b35d.css",
-    "static/js/main.fd77c6f4.js"
+    "static/js/main.ad39a5d1.js"
   ]
 }
