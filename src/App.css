@@ -1019,6 +1019,15 @@ input[type='date'] {
         width: 100%;
         height: 100%;
     }
+    .search{
+   
+      text-align: center;
+  
+      display: block;
+    }
+    .inputsearch{
+      margin-bottom: 10px;
+    }
 }
 
 
