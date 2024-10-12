@@ -53,7 +53,7 @@ export default function Events() {
  
  </form>
            {
-            (!item)?<p>Not found</p>:<EventHome data={item}/>
+            (!item)?<p>Loading</p>:<EventHome data={item}/>
            }
         </div>
   )

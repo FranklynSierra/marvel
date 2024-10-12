@@ -55,7 +55,7 @@ export default function Characters() {
  </form>
  <h2 className='texteventshome'>Characters</h2>
            {
-            (!item)?<p>Not found</p>:<Image data={item}/>
+            (!item)?<p>Loading</p>:<Image data={item}/>
            }
         </div>
   )

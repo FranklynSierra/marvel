@@ -17,6 +17,7 @@ import appFirebase from './credentials';
 import { useState } from 'react';
 import TopBar from './components/TopBar';
 import Footer from './components/Footer';
+
 const auth=getAuth(appFirebase)
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
        <Route path='/serie/:id'element={<IndSeries/>}/>
        
       </Routes>
-      <Footer/>
+     <Footer/>
    </BrowserRouter>
   );
 }

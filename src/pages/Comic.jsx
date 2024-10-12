@@ -56,7 +56,7 @@ export default function Comic() {
     </form>
     <h2 className='texteventshome'>Comics</h2>
          {
-          (!item)?<p>Not found</p>:<ComicsHome data={item}/>
+          (!item)?<p>Loading</p>:<ComicsHome data={item}/>
          }
       </div>
     );

@@ -52,7 +52,7 @@ export default function Series() {
  
  </form>
            {
-            (!item)?<p>Not found</p>:<SeriesHome data={item}/>
+            (!item)?<p>Loading</p>:<SeriesHome data={item}/>
            }
         </div>
   )
