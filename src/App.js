@@ -39,7 +39,7 @@ function App() {
    <TopBar correousuario={user.email}/>
       <Routes>
        <Route path='/'element={<Home></Home>}/>
-       <Route path='/marvel'element={<Home></Home>}/>
+       <Route path='/marvel-app'element={<Home></Home>}/>
        <Route path='/login'element={<Login/>}/>
        <Route path='/comic'element={<Comic/>}/>
        <Route path='/characters'element={<Characters/>}/>
